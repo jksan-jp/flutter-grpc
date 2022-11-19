@@ -1,5 +1,13 @@
-import 'package:server/server.dart' as server;
+import 'package:grpc/grpc.dart';
+import 'package:grpc_gen/greeter_service.dart';
 
-void main(List<String> arguments) {
-  print('Hello world: ${server.calculate()}!');
+Future<void> main(List<String> args) async {
+  final server = Server(
+    [GreeterService()],
+    const <Interceptor>[],
+    CodecRegistry(codecs: const [GzipCodec(), IdentityCodec()]),
+  );
+
+  await server.serve(port: 50051);
+  print('Server listening on port ${server.port}...');
 }
