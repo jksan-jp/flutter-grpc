@@ -33,6 +33,10 @@ final greeterProvider = FutureProvider.autoDispose<String>((ref) async {
   return response.message;
 });
 
+void main() {
+  runApp(const MyApp());
+}
+
 class MyApp extends HookWidget {
   const MyApp({super.key});
 
