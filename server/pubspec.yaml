@@ -1,7 +1,7 @@
 name: server
 description: A sample command-line application.
 version: 1.0.0
-publich_to: none
+publish_to: 'none'
 # homepage: https://www.example.com
 
 environment:
