@@ -34,7 +34,9 @@ final greeterProvider = FutureProvider.autoDispose<String>((ref) async {
 });
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ProviderScope(
+    child: MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
