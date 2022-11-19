@@ -30,11 +30,11 @@ class HelloRequest extends $pb.GeneratedMessage {
   factory HelloRequest({
     $core.String? name,
   }) {
-    final _result = create();
+    final result = create();
     if (name != null) {
-      _result.name = name;
+      result.name = name;
     }
-    return _result;
+    return result;
   }
   factory HelloRequest.fromBuffer($core.List<$core.int> i,
           [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
@@ -97,11 +97,11 @@ class HelloReply extends $pb.GeneratedMessage {
   factory HelloReply({
     $core.String? message,
   }) {
-    final _result = create();
+    final result = create();
     if (message != null) {
-      _result.message = message;
+      result.message = message;
     }
-    return _result;
+    return result;
   }
   factory HelloReply.fromBuffer($core.List<$core.int> i,
           [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
