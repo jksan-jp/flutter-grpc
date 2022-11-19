@@ -5,5 +5,5 @@
 > dart server/bin/server.dart
 
 ## app
-> cd app
-> flutter run
+> chromeだとうまく表示されないから、
+> android studioとかでシュミレーター立ち上げ確認推奨
